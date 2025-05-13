@@ -1,4 +1,3 @@
-/* Algemene stijlen */
 * {
   margin: 0;
   padding: 0;
@@ -54,18 +53,18 @@ body::before {
   z-index: -1;
 }
 
-/* Voor een geblurde achtergrondcontainer */
+/* Voor een geblurde achtergrond */
 .background-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Pictures/Background_SportBike.jpg'); /* Plaats hier je achtergrondafbeelding */
+  background-image: url('Pictures/Background_SportBike.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(px); /* Blur effect */
+  filter: blur(px);
   z-index: -1;
 }
 
@@ -117,13 +116,13 @@ footer {
   align-items: center;
   text-align: center;
 }
-/* Styling for Information Section */
+
 section {
-  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-  border-radius: 12px; /* Smooth rounded corners */
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
