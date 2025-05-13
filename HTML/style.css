@@ -1,0 +1,157 @@
+/* Algemene stijlen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+header, nav, main, footer {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Achtergrond met dimming */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dimmed overlay */
+  z-index: -1;
+}
+
+/* Voor een geblurde achtergrondcontainer */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Pictures/Background_SportBike.jpg'); /* Plaats hier je achtergrondafbeelding */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(px); /* Blur effect */
+  z-index: -1;
+}
+
+/* Fotogalerij */
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulier */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Styling for Information Section */
+section {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  border-radius: 12px; /* Smooth rounded corners */
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #444; 
+  margin-bottom: 1rem;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8; 
+  color: #444; 
+}
+
+section ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #444; 
+}
+
+section ul li strong {
+  color: #000; 
+}
